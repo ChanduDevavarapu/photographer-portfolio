@@ -1,0 +1,101 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    .portfolio2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-MediumItalic", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0.83;
+  position: absolute;
+  left: 582px;
+  top: 31px;
+  width: 138px;
+  height: 33px;
+}
+.contact {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-MediumItalic", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0.83;
+  position: absolute;
+  left: 1116px;
+  top: 33px;
+  width: 131px;
+  height: 43px;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-MediumItalic", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0.83;
+  position: absolute;
+  left: 873px;
+  top: 33px;
+  width: 127px;
+  height: 35px;
+}
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center">
+   <a href="portfolio.html" class="portfolio2">Portfolio</a>
+   <a href="about.html" class="about">About</a>
+   <a href="contact.html" class="contact">Contact</a>
+   <div class="logo">
+      <img src="C:\Users\devav\Downloads\project\logo.png" alt="Logo" style="position: absolute; left: 20px; top: 20px; width: 100px; height: auto;">
+    </div>
+<main class="flex flex-col items-center w-full px-4">
+ <h1 class="text-6xl font-bold mb-8">
+    Contact
+ </h1>
+ <form class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="flex flex-col">
+     <label class="mb-2" for="first-name">
+        First Name*
+     </label>
+     <input class="bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-white py-2" id="first-name" type="text"/>
+    </div>
+    <div class="flex flex-col">
+     <label class="mb-2" for="last-name">
+        Last Name*
+     </label>
+     <input class="bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-white py-2" id="last-name" type="text"/>
+    </div>
+    <div class="flex flex-col">
+     <label class="mb-2" for="email">
+        Email*
+     </label>
+     <input class="bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-white py-2" id="email" type="email"/>
+    </div>
+    <div class="flex flex-col">
+     <label class="mb-2" for="phone">
+        Phone*
+     </label>
+     <input class="bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-white py-2" id="phone" type="tel"/>
+    </div>
+    <div class="flex flex-col md:col-span-2">
+     <label class="mb-2" for="message">
+        Leave us a message.....
+     </label>
+     <textarea class="bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-white py-2" id="message" rows="4"></textarea>
+    </div>
+    <div class="md:col-span-2 flex justify-end">
+     <button class="bg-black text-white py-2 px-6" type="submit">
+        Submit
+     </button>
+    </div>
+ </form>
+</main>
+ </body>
+</html>

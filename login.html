@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  </head>
+  <body class="bg-black text-white h-screen flex items-center justify-center">
+    <div class="absolute top-0 left-0 p-4 text-gray-400">
+      <img
+      src="C:\Users\devav\Downloads\project\logo.png"
+      alt="Logo"
+      class="h-12 w-auto"
+      onerror="this.style.display='none';"
+      />
+    </div>
+    <div class="absolute top-0 right-0 p-4">
+      <i class="fas fa-code text-green-500"></i>
+    </div>
+    <div class="relative w-full h-full flex items-center justify-center">
+      <img
+        alt="Close-up of a camera lens with reflections of light"
+        class="absolute w-full h-full object-cover opacity-50"
+        height="600"
+        src="C:\Users\devav\Downloads\project\login-bg.jpg"
+        width="800"
+      />
+      <div class="relative z-10 text-center">
+        <h1 class="text-5xl font-bold">
+          FRAMES OF
+          <span class="border-2 border-white px-2">LIFE</span>
+        </h1>
+        <p class="text-xl mt-2">THE ART OF FREEZING TIME</p>
+        <div class="mt-10 text-left">
+          <h2 class="text-2xl font-bold">LOGIN:</h2>
+          <form class="mt-4" onsubmit="return validateForm()">
+            <label class="block text-lg mb-2">USERNAME:</label>
+            <input
+              id="username"
+              class="w-full p-2 mb-4 bg-blue-900 bg-opacity-50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+            />
+            <label class="block text-lg mb-2">PASSWORD:</label>
+            <input
+              id="password"
+              class="w-full p-2 mb-4 bg-blue-900 bg-opacity-50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="password"
+            />
+            <button
+              class="w-full p-2 bg-blue-500 rounded-lg text-white hover:bg-blue-600"
+              type="submit"
+            >
+              Log in
+            </button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+    <script>
+      function validateForm() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "") {
+          alert("Username cannot be empty");
+          return false;
+        }
+
+        if (password === "") {
+          alert("Password cannot be empty");
+          return false;
+        }
+
+        if (password.length < 6) {
+          alert("Password must be at least 6 characters long");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>
